@@ -4,7 +4,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import jp.team.ework.bitmapextensions.grayscale.grayScale
+import jp.team.ework.bitmapextensions.mosaic.averagePooling
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<ImageView>(R.id.processed_image).let { imageView ->
             val bitmap = (getDrawable(R.drawable.lenna) as BitmapDrawable).bitmap
-            imageView.setImageBitmap(bitmap.grayScale())
+            imageView.setImageBitmap(bitmap.averagePooling())
         }
     }
 }

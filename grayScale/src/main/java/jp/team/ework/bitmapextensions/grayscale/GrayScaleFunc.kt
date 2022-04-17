@@ -1,6 +1,7 @@
 package jp.team.ework.bitmapextensions.grayscale
 
 import android.graphics.Color
+import jp.team.ework.bitmapextensions.core.ColorValue
 import kotlin.math.pow
 
 // 元ネタ
