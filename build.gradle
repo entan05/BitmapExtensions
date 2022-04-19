@@ -1,8 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.userName = 'entan05'
-    ext.artifactId = 'BitmapExtensions'
-    ext.libVersion = '0.0.1-alpha2'
     repositories {
         google()
         mavenCentral()
