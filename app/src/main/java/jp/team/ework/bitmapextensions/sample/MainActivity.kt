@@ -5,13 +5,15 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import jp.team.ework.bitmapextensions.sample.base.BaseFragment
+import jp.team.ework.bitmapextensions.sample.fragment.BinarizationSampleFragment
 import jp.team.ework.bitmapextensions.sample.fragment.GrayScaleSampleFragment
 import jp.team.ework.bitmapextensions.sample.fragment.MosaicSampleFragment
 
 class MainActivity: AppCompatActivity() {
     private enum class ListItem(val rawValue: String) {
         GrayScale("GrayScale"),
-        Mosaic("Mosaic");
+        Mosaic("Mosaic"),
+        Binarization("Binarization");
 
         companion object {
             fun getNameList() = values().map { it.rawValue }
@@ -35,6 +37,7 @@ class MainActivity: AppCompatActivity() {
     private fun getFragment(item: ListItem?): BaseFragment? = when (item) {
         ListItem.GrayScale -> GrayScaleSampleFragment.new()
         ListItem.Mosaic -> MosaicSampleFragment.new()
+        ListItem.Binarization -> BinarizationSampleFragment.new()
         else -> null
     }
 
