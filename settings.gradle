@@ -3,11 +3,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "My Application"
+rootProject.name = "BitmapExtensions"
 include ':app'
 include ':grayScale'
 include ':mosaic'
 include ':core'
+include ':binarization'

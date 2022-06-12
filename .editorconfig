@@ -10,10 +10,14 @@ max_line_length = off # 1行の最大文字数
 trim_trailing_whitespace = true # 末尾のホワイトスペースを取り除くか
 
 [*.{kt, kts}]
+ij_kotlin_call_parameters_new_line_after_left_paren = false
 ij_kotlin_catch_on_new_line = false # catch を新しい行にするか
 ij_kotlin_else_on_new_line = false # else を新しい行にするか
 ij_kotlin_finally_on_new_line = false # finally を新しい行にするか
+ij_kotlin_method_parameters_new_line_after_left_paren = false
 ij_kotlin_method_parameters_right_paren_on_new_line = false # 引数の ) を新しい行にするか
+ij_kotlin_name_count_to_use_star_import = 10000
+ij_kotlin_name_count_to_use_star_import_for_members = 10000
 ij_kotlin_space_after_comma = true # , の後ろにスペースを入れるか
 ij_kotlin_space_after_extend_colon = true # 継承の : の後ろにスペースを入れるか
 ij_kotlin_space_after_type_colon = true # 型の : の後ろにスペースを入れるか
